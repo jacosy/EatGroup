@@ -1,0 +1,159 @@
+﻿
+@{
+    ViewBag.Title = "Group";
+}
+
+@section css{
+    <style type="text/css">
+        .placeholder img {
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        .name-center {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .last-time {
+            color: orangered;
+            margin-top: 30px;
+        }
+
+        .section-info-line {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .section-info {
+            font-size: 13px;
+            -webkit-flex: none;
+            -ms-flex: none;
+            flex: none;
+        }
+
+        .widget-pane-content-holder {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: left;
+            overflow: visible;
+            position: absolute;
+            height: 100%;
+            width: 408px;
+        }
+
+        .maps-sprite-pane-info-address {
+            background: no-repeat url(//maps.gstatic.com/tactile/icons/pane-info-6c8ac387dd0149fb4785539ed38aecf0.png) 0 -270px;
+            height: 24px;
+            width: 24px;
+        }
+
+        .maps-sprite-pane-info-website {
+            background: no-repeat url(//maps.gstatic.com/tactile/icons/pane-info-6c8ac387dd0149fb4785539ed38aecf0.png) 0 -348px;
+            height: 24px;
+            width: 24px;
+        }
+
+        .maps-sprite-pane-info-phone {
+            background: no-repeat url(//maps.gstatic.com/tactile/icons/pane-info-6c8ac387dd0149fb4785539ed38aecf0.png) 0 -426px;
+            height: 24px;
+            width: 24px;
+        }
+
+        .maps-sprite-pane-info-hours {
+            background: no-repeat url(//maps.gstatic.com/tactile/icons/pane-info-6c8ac387dd0149fb4785539ed38aecf0.png) 0 -478px;
+            height: 24px;
+            width: 24px;
+        }
+    </style>
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 main">
+            <h2 class="page-header last-time">
+                剩餘決定時間：<label>05</label>：<label>00</label>
+            </h2>
+
+            <div class="row placeholders">
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="~/image/Judge1.png" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">Arthur Shen</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="~/image/Judge2.png" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">Kouler Liu</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="~/image/Judge3.png" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">Kevin Lai</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="~/image/Judge4.png" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">Antony Chen</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="~/image/Judge5.png" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">Neo Liu</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="~/image/Judge6.png" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">Sandra Shi</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">夥伴 A</h5>
+                </div>
+                <div class="col-xs-3 col-sm-2 placeholder">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="70" height="70" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h5 class="name-center">夥伴 B</h5>
+                </div>
+            </div>
+
+            <h2 class="sub-header">投票吃飯囉!</h2>
+            <div class="panel panel-primary">
+                <div class="panel-heading">紫藤廬</div>
+                <div class="panel-body">
+                    <div class="section-info-line"><span jstcache="733" aria-label="地址" role="img" class="section-info-icon maps-sprite-pane-info-address" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-address,0.aria-label,0.role"> </span> <span jstcache="734" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="735" class="section-info-text"><span jstcache="626"><button jstcache="627" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="628">106台北市大安區新生南路三段16巷1號</span></span><span jstcache="629" style="display:none"><span jstcache="630"></span></span><a jstcache="631" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link" style="display:none"></a></span> <span jstcache="736" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="733" aria-label="網站" role="img" class="section-info-icon maps-sprite-pane-info-website" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-website,0.aria-label,0.role"> </span> <span jstcache="734" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="735" class="section-info-text"><span jstcache="626" style="display:none"><button jstcache="627" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="628" style="display:none"></span></span><span jstcache="629"><span jstcache="630" vet="3443" jsan="t-BOpPpKTR3Lc,0.vet"><a tabindex="-1" target="_blank" jstcache="633" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu;focus:pane.focusTooltip;blur:pane.blurTooltip" class="widget-pane-link" style="display:none" jsan="7.widget-pane-link,0.tabindex,0.target,22.jsaction"><div jstcache="634"></div></a><a tabindex="-1" target="_blank" jstcache="635" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu" class="widget-pane-link" style="display:none" jsan="7.widget-pane-link,0.tabindex,0.target,22.jsaction"><div jstcache="636" class="widget-pane-logged-link-image" jsan="7.widget-pane-logged-link-image"></div></a><a data-attribution-url="http://www.wistariateahouse.com/" data-redirect="1,AFQjCNHBs_0IRcaAt5hl8BC0ZJLMxG6rEQ,MiCYBncPbs183nsmJD2CAg,0ahUKEwiIx-3T-qfPAhVGsJQKHUpvB4oQ61gICigFMAA,," target="_blank" jstcache="637" href="http://www.wistariateahouse.com/" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu" class="widget-pane-link" jsan="7.widget-pane-link,0.data-attribution-url,0.data-redirect,8.href,0.target,22.jsaction">wistariateahouse.com</a></span></span><a jstcache="631" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link" style="display:none"></a></span> <span jstcache="736" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="281" aria-label="電話號碼" role="img" class="section-info-icon maps-sprite-pane-info-phone" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-phone,0.aria-label,0.role"> </span> <span jstcache="282" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="283" class="section-info-text"><span jstcache="174" style="display:none"><button jstcache="175" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="176" style="display:none"></span></span><span jstcache="177" style="display:none"><span jstcache="178"></span></span><a data-href="tel:+886223637375" jstcache="179" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link">02 2363 7375</a></span> <span jstcache="284" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="740" aria-label="營業時間" role="img" class="section-info-icon maps-sprite-pane-info-hours" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-hours,0.aria-label,0.role"> </span> <span jstcache="741" class="section-info-hour-text"> <span jstcache="742" class="section-info-text" jsan="7.section-info-text" style="margin-left: 1%">營業中：</span> <span jstcache="743" class="section-info-text">10:00–23:00</span> </span></div>
+                    <div class="pull-right"><button class="btn btn-primary" style="margin-top: -40px;">我要吃這家</button></div>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">青田七六</div>
+                <div class="panel-body">
+                    <div class="section-info-line"><span jstcache="733" aria-label="地址" role="img" class="section-info-icon maps-sprite-pane-info-address" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-address,0.aria-label,0.role"> </span> <span jstcache="734" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="735" class="section-info-text"><span jstcache="626"><button jstcache="627" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="628">106台北市大安區青田街7巷6號</span></span><span jstcache="629" style="display:none"><span jstcache="630"></span></span><a jstcache="631" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link" style="display:none"></a></span> <span jstcache="736" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="733" aria-label="網站" role="img" class="section-info-icon maps-sprite-pane-info-website" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-website,0.aria-label,0.role"> </span> <span jstcache="734" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="735" class="section-info-text"><span jstcache="626" style="display:none"><button jstcache="627" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="628" style="display:none"></span></span><span jstcache="629"><span jstcache="630" vet="3443" jsan="t-BOpPpKTR3Lc,0.vet"><a tabindex="-1" target="_blank" jstcache="633" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu;focus:pane.focusTooltip;blur:pane.blurTooltip" class="widget-pane-link" style="display:none" jsan="7.widget-pane-link,0.tabindex,0.target,22.jsaction"><div jstcache="634"></div></a><a tabindex="-1" target="_blank" jstcache="635" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu" class="widget-pane-link" style="display:none" jsan="7.widget-pane-link,0.tabindex,0.target,22.jsaction"><div jstcache="636" class="widget-pane-logged-link-image" jsan="7.widget-pane-logged-link-image"></div></a><a data-attribution-url="http://www.wistariateahouse.com/" data-redirect="1,AFQjCNHBs_0IRcaAt5hl8BC0ZJLMxG6rEQ,MiCYBncPbs183nsmJD2CAg,0ahUKEwiIx-3T-qfPAhVGsJQKHUpvB4oQ61gICigFMAA,," target="_blank" jstcache="637" href="http://qingtian76.tw/" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu" class="widget-pane-link" jsan="7.widget-pane-link,0.data-attribution-url,0.data-redirect,8.href,0.target,22.jsaction">qingtian76.tw</a></span></span><a jstcache="631" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link" style="display:none"></a></span> <span jstcache="736" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="281" aria-label="電話號碼" role="img" class="section-info-icon maps-sprite-pane-info-phone" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-phone,0.aria-label,0.role"> </span> <span jstcache="282" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="283" class="section-info-text"><span jstcache="174" style="display:none"><button jstcache="175" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="176" style="display:none"></span></span><span jstcache="177" style="display:none"><span jstcache="178"></span></span><a data-href="tel:+886223916676" jstcache="179" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link">02 2391 6676</a></span> <span jstcache="284" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="740" aria-label="營業時間" role="img" class="section-info-icon maps-sprite-pane-info-hours" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-hours,0.aria-label,0.role"> </span> <span jstcache="741" class="section-info-hour-text"> <span jstcache="742" class="section-info-text" jsan="7.section-info-text" style="margin-left: 1%">營業中：</span> <span jstcache="743" class="section-info-text">11:30–23:00</span> </span></div>
+                    <div class="pull-right"><button class="btn btn-primary" style="margin-top: -40px;">我要吃這家</button></div>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">佬墨日出</div>
+                <div class="panel-body">
+                    <div class="section-info-line"><span jstcache="733" aria-label="地址" role="img" class="section-info-icon maps-sprite-pane-info-address" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-address,0.aria-label,0.role"> </span> <span jstcache="734" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="735" class="section-info-text"><span jstcache="626"><button jstcache="627" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="628">台北市大安區新生南路三段42號</span></span><span jstcache="629" style="display:none"><span jstcache="630"></span></span><a jstcache="631" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link" style="display:none"></a></span> <span jstcache="736" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="733" aria-label="網站" role="img" class="section-info-icon maps-sprite-pane-info-website" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-website,0.aria-label,0.role"> </span> <span jstcache="734" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="735" class="section-info-text"><span jstcache="626" style="display:none"><button jstcache="627" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="628" style="display:none"></span></span><span jstcache="629"><span jstcache="630" vet="3443" jsan="t-BOpPpKTR3Lc,0.vet"><a tabindex="-1" target="_blank" jstcache="633" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu;focus:pane.focusTooltip;blur:pane.blurTooltip" class="widget-pane-link" style="display:none" jsan="7.widget-pane-link,0.tabindex,0.target,22.jsaction"><div jstcache="634"></div></a><a tabindex="-1" target="_blank" jstcache="635" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu" class="widget-pane-link" style="display:none" jsan="7.widget-pane-link,0.tabindex,0.target,22.jsaction"><div jstcache="636" class="widget-pane-logged-link-image" jsan="7.widget-pane-logged-link-image"></div></a><a data-attribution-url="http://www.morau.com/" data-redirect="1,AFQjCNHBs_0IRcaAt5hl8BC0ZJLMxG6rEQ,MiCYBncPbs183nsmJD2CAg,0ahUKEwiIx-3T-qfPAhVGsJQKHUpvB4oQ61gICigFMAA,," target="_blank" jstcache="637" href="http://morau.tw/" jsaction="log.outbound;clickmod:log.outbound;contextmenu:log.outbound_contextmenu" class="widget-pane-link" jsan="7.widget-pane-link,0.data-attribution-url,0.data-redirect,8.href,0.target,22.jsaction">morau.tw</a></span></span><a jstcache="631" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link" style="display:none"></a></span> <span jstcache="736" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="281" aria-label="電話號碼" role="img" class="section-info-icon maps-sprite-pane-info-phone" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-phone,0.aria-label,0.role"> </span> <span jstcache="282" class="section-info-icon section-info-no-icon" style="display:none"></span> <span style="margin: 1.5%;"> <span jstcache="283" class="section-info-text"><span jstcache="174" style="display:none"><button jstcache="175" class="widget-pane-link widget-pane-term-link" style="display:none" jsan="7.widget-pane-link,7.widget-pane-term-link"></button><span jstcache="176" style="display:none"></span></span><span jstcache="177" style="display:none"><span jstcache="178"></span></span><a data-href="tel:+886223627563" jstcache="179" href="javascript:void(0)" jsaction="focus:pane.focusPhoneNumber" class="widget-pane-link">02 2362 7563</a></span> <span jstcache="284" class="section-info-secondary-text" style="display:none"></span> </span> </div>
+                    <div class="section-info-line"><span jstcache="740" aria-label="營業時間" role="img" class="section-info-icon maps-sprite-pane-info-hours" jsan="t-1XyDmlxu7UE,7.section-info-icon,7.maps-sprite-pane-info-hours,0.aria-label,0.role"> </span> <span jstcache="741" class="section-info-hour-text"> <span jstcache="742" class="section-info-text" jsan="7.section-info-text" style="margin-left: 1%">營業中：</span> <span jstcache="743" class="section-info-text">11:00–22:00</span> </span></div>
+                    <div class="pull-right"><button class="btn btn-primary" style="margin-top: -40px;">我要吃這家</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 main" style="text-align: center;">
+            <button class="btn btn-primary">請幫我選擇</button>
+        </div>
+    </div>
+</div>

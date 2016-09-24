@@ -108,12 +108,43 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\detail\1.css" />
+    <Content Include="Content\detail\2.jpg" />
+    <Content Include="Content\detail\3.jpg" />
+    <Content Include="Content\detail\4.jpg" />
+    <Content Include="Content\detail\5.jpg" />
+    <Content Include="Content\detail\6.jpg" />
+    <Content Include="Content\detail\9.jpg" />
+    <Content Include="Content\detail\animsition.css" />
+    <Content Include="Content\detail\icon.css" />
+    <Content Include="Content\detail\material.indigo-pink.min.css" />
+    <Content Include="Content\detail\style.css" />
+    <Content Include="Content\detail\sub-user.jpg" />
+    <Content Include="Content\detail\sweetalert.css" />
+    <Content Include="Content\detail\swipebox.min.css" />
+    <Content Include="Content\detail\user.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="image\0e73946793e9e4b124f3d2fa5c21e57d.png" />
+    <Content Include="image\Judge1.png" />
+    <Content Include="image\Judge2.png" />
+    <Content Include="image\Judge3.png" />
+    <Content Include="image\Judge4.png" />
+    <Content Include="image\Judge5.png" />
+    <Content Include="image\Judge6.png" />
+    <Content Include="Scripts\ai.0.22.19-build00125.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="Scripts\Apps\geolocation.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\detail\analytics.js" />
+    <Content Include="Scripts\detail\function.js" />
+    <Content Include="Scripts\detail\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\detail\jquery.animsition.js" />
+    <Content Include="Scripts\detail\jquery.swipebox.min.js" />
+    <Content Include="Scripts\detail\material.min.js" />
+    <Content Include="Scripts\detail\sweetalert.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -127,6 +158,8 @@
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Map.cshtml" />
+    <Content Include="Views\Home\Group.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
