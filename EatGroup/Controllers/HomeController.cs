@@ -18,5 +18,10 @@ namespace EatGroup.Controllers
         {
             return View();
         }
+
+        public ActionResult Favorite()
+        {
+            return View();
+        }
     }
 }

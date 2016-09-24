@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+@section css{
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+<style type="text/css">
+    body {
+        background: linear-gradient(141deg, #fff 0%, #eaf4fc 51%, #f3f3f3 75%);
+    }
+
+
+    .listitem {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 7px;
+        margin-left: 18px;
+        height: 160px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: #fff;
+    }
+
+        .listitem:hover {
+            opacity: 0.7;
+        }
+
+        .listitem > img {
+            width: 100%;
+            height: 80%;
+        }
+
+        .listitem > .namelabel {
+            width: 100%;
+            height: 20%;
+        }
+
+    .top-label {
+        background: linear-gradient(141deg, #3e62ad 0%, #4c6cb3 51%, #3e62ad 75%);
+        border-bottom: 1px solid #ececec;
+        padding: 45px 0;
+        text-align: center;
+        color: #f3f3f3;
+        margin-bottom: 20px;
+        font-family: 'Microsoft JhengHei';
+    }
+</style>
+
+}
+
+
+    <div class="top-label">
+        <span class="page-header">
+            <!--<h1><small style="color:#fff;">我</small><strong>轉!!</strong>&nbsp<small style="color:#fff;">午餐<strong style="font-weight:bolder;font-size:28px;">吃</strong>什麼?</small></h1>
+            -->
+            <h3 class="text-center">My favorite</h3>
+            <img style="width:90px;height:24px;" class="center-block" src="../image/0e73946793e9e4b124f3d2fa5c21e57d.png" />
+        </span>
+    </div>
+    <div ng-app="fApplicant" ng-controller="fController" class="container">
+        <div class="row">
+            <div class="col-xs-5 listitem">
+                <img src="../image/1.jpg" />
+                <div class="text-center namelabel">
+                    <h5>Second Floor Cafe</h5>
+                </div>
+            </div>
+            <div class="col-xs-5 listitem">
+                <img src="../image/2.jpg" />
+                <div class="text-center namelabel">
+                    <h5>KIKI餐廳</h5>
+                </div>
+            </div>
+            <div class="col-xs-5 listitem">
+                <img src="../image/3.jpg" />
+                <div class="text-center namelabel">
+                    <h5>墨賞新鐵板料理</h5>
+                </div>
+            </div>
+            <div class="col-xs-5 listitem">
+                <img src="../image/4.jpg" />
+                <div class="text-center namelabel">
+                    <h5>BIANCO義式餐廳</h5>
+                </div>
+            </div>
+            <div class="col-xs-5 listitem">
+                <img src="../image/5.jpg" />
+                <div class="text-center namelabel">
+                    <h5>GOGO PASTA</h5>
+                </div>
+            </div>
+        </div>
+        @*<div style="height:100px;"></div>*@
+    </div>
+
+@section scripts{
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyA09hHYSbYv7TgOkDA9Up4MyTG1qYCarGM&libraries=places"></script>
+<script type="text/javascript">
+
+        var app = angular.module('fApplicant', []);
+
+        app.controller('fController', function ($scope) {
+
+            $.getJSON('../Data/Google_Map_API____________________JSON.js', function (data) {
+                $scope.list = data.result;
+                $scope.$apply();
+            });
+
+            $scope.parseImg = function (str64) {
+                var test = 'data:image/png;base64,' + str64;
+                return 'data:image/png;base64,' + str64;
+            }
+        });
+</script>
+}
