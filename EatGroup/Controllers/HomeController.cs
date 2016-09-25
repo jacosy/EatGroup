@@ -11,7 +11,8 @@ namespace EatGroup.Controllers
         // GET: Default
         public ActionResult Index()
         {
-            return Login();
+            //return Map();
+            return RedirectToAction("message");
         }
 
         public ActionResult Login()

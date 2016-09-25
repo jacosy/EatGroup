@@ -132,6 +132,7 @@
     <Content Include="image\Judge4.png" />
     <Content Include="image\Judge5.png" />
     <Content Include="image\Judge6.png" />
+    <Content Include="image\紫藤廬.jpg" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\Apps\geolocation.js" />
