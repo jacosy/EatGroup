@@ -19,12 +19,20 @@ namespace EatGroup.Controllers
             return View();
         }
 
+        public ActionResult Map()
+        {
+            return View();
+        }
 
         public ActionResult Favorite()
         {
             return View();
         }
 
+        public ActionResult Group()
+        {
+            return View();
+        }
 
         public ActionResult detail()
         {
