@@ -80,7 +80,7 @@
     <div class="row">
         <div class="col-sm-12 main">
             <h2 class="page-header last-time">
-                剩餘決定時間：<label>05</label>：<label>00</label>
+                剩餘決定時間：<label id="lbMinute">05</label>：<label id="lbSecound">00</label>
             </h2>
 
             <div class="row placeholders">
@@ -153,11 +153,54 @@
     </div>
     <div class="row">
         <div class="col-sm-12 main" style="text-align: center;">
-            <button class="btn btn-primary">請幫我選擇</button>
+            <a class="btn btn-primary" href="Rotary">請幫我選擇</a>
         </div>
     </div>
 </div>
 
 @section scripts{
-    
-    }
+    <script type="text/javascript">
+        $(function () {
+            setInterval(function () { setSecounds(); }, 990);
+        });
+
+        var timer;
+        function ticktopStart() {
+            timer = setInterval(function () { setSecounds(); }, 990);
+        }
+
+        function ticktopStop() {
+            clearInterval(timer);
+        }
+
+
+        function setMinutes() {
+            var minute = parseInt($('#lbMinute').text());
+            if (minute !== 0) {
+                minute -= 1;
+            }
+            else {
+                ticktopStop();
+            }
+            $('#lbMinute').text("0" + minute.toString());
+        }
+
+        function setSecounds() {
+            var secound = parseInt($('#lbSecound').text());
+            if (secound !== 0) {
+                secound -= 1;
+            }
+            else {
+                secound = 59;
+                setMinutes();
+            }
+
+            if (secound < 10) {
+                $('#lbSecound').text("0" + secound.toString());
+            }
+            else {
+                $('#lbSecound').text(secound);
+            }
+        }
+    </script>
+}
