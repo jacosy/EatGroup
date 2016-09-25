@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="row full-height">
-        <div class="col-sm-12 full-height" style="height: 1140px;">
+        <div class="col-sm-12 full-height" style="height: 800px;">
             <div id="map" class="full-height"></div>
         </div>
     </div>
@@ -55,7 +55,7 @@
     <script src="../scripts/bootstrap.min.js"></script>
     <script type="text/javascript">
 
-        var userPosition, pyrmont, map, request, placeService, infoWindow;
+        var userPosition, pyrmont, map, request, placeService, infowindow;
 
         function initialize() {
             getUserPosition(function (position) {
@@ -86,7 +86,7 @@
                 placeService = new google.maps.places.PlacesService(map);
                 nearbySearchApi(request);
 
-                infoWindow = new google.maps.InfoWindow();
+                infowindow = new google.maps.InfoWindow();
 
             }, displayError);
         }
