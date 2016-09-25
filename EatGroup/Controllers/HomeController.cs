@@ -11,7 +11,7 @@ namespace EatGroup.Controllers
         // GET: Default
         public ActionResult Index()
         {
-            return View();
+            return Login();
         }
 
         public ActionResult Login()
