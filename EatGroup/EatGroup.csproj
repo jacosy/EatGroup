@@ -163,6 +163,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <None Include="Scripts\_references.js" />
+    <None Include="Views\Home\Rotary.cshtml" />
     <Content Include="Views\Home\Rotary.html" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Login.cshtml" />

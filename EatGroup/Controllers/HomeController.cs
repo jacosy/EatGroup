@@ -44,5 +44,10 @@ namespace EatGroup.Controllers
         {
             return View();
         }
+
+        public ActionResult Rotary()
+        {
+            return View();
+        }
     }
 }
