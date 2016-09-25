@@ -37,6 +37,13 @@ function nearbySearchApi(request, onSucceed, onError) {
     });
 }
 
+function markerClick(marker, place) {
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.setContent("<span>" + place.name + "</span><br>" + place.vicinity + "<br><a href='Detail'>店家詳細資訊</span>");
+        infowindow.open(map, this);
+    });
+}
+
 var isFirst = true;
 function defaultPlaceSucceedHandler(results) {
     for (var i = 0; i < results.length; i++) {
@@ -49,12 +56,7 @@ function defaultPlaceSucceedHandler(results) {
             position: place.geometry.location
         });
 
-        google.maps.event.addListener(marker, 'click', function () {
-            map.setZoom(17);
-            map.setCenter(marker.getPosition());
-            infowindow.setContent("<h4>" + place.name + "</h4>" + place.adr_address + "<br><a href='~/Home/Detail'>店家詳細資訊</span>");
-            infowindow.open(map, this);
-        });
+        markerClick(marker, place);
     }
 
     if (isFirst) {
@@ -64,31 +66,27 @@ function defaultPlaceSucceedHandler(results) {
 
 function addDefautlMarker() {
     // 青田76
-    var marker = new google.maps.Marker({
+    var marker1 = new google.maps.Marker({
         map: map,
         position: {
             "lat": 25.027954,
             "lng": 121.532607
         }
     });
-    google.maps.event.addListener(marker, 'click', function () {
-        map.setZoom(17);
-        map.setCenter(marker.getPosition());
-        infowindow.setContent("<h4>青田76</h4><span>106台灣台北市大安區青田街7巷6號</span><br><a href='~/Home/Detail'>店家詳細資訊</span>");
+    google.maps.event.addListener(marker1, 'click', function () {
+        infowindow.setContent("<span>青田76</span><br><span>106台灣台北市大安區青田街7巷6號</span><br><a href='Detail'>店家詳細資訊</span>");
         infowindow.open(map, this);
     });
     // 紫藤廬
-    var marker = new google.maps.Marker({
+    var marker2 = new google.maps.Marker({
         map: map,
         position: {
             "lat": 25.02462,
             "lng": 121.534306
         }
     });
-    google.maps.event.addListener(marker, 'click', function () {
-        map.setZoom(17);
-        map.setCenter(marker.getPosition());
-        infowindow.setContent("<span>紫藤廬</span><br><span>106台灣台北市大安區新生南路三段16巷1號</span><br><a href='~/Home/Detail'>店家詳細資訊</span>");
+    google.maps.event.addListener(marker2, 'click', function () {
+        infowindow.setContent("<span>紫藤廬</span><br><span>106台灣台北市大安區新生南路三段16巷1號</span><br><a href='Detail'>店家詳細資訊</span>");
         infowindow.open(map, this);
     });
     isFirst = false;
